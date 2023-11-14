@@ -1,0 +1,341 @@
+/*.mainContainer {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 64px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultContainer,
+.historyItem {
+  flex-direction: row;
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historyContainer {
+  flex-direction: column;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  flex-grow: 5;
+  justify-content: flex-start;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inputContainer>.errorLabel {
+  color: red;
+  font-size: 12px;
+}
+
+.inputBox {
+  height: 48px;
+  width: 400px;
+  font-size: large;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding-left: 8px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #f2f2f2;
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+
+/* LoginPage.css */
+
+
+
+/* .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../src/components/background_image.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  opacity: 0.9;
+
+
+
+} */
+
+
+
+
+
+
+/* .wrapper {
+  margin-top: 5%;
+  margin-left: 35%;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  width: 380px;
+  /* background-image: url("../src/components/background_image.jpg"); */
+/* background: #ebe4e4; */
+/* border-radius: 15px; */
+/* backdrop-filter: blur(0.5px); */
+/* } */
+
+
+/* box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1); */
+
+/* } */
+
+/* .common-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  background-image: url("../src/components/background_image.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+} */
+
+/* .background-image {
+  /* margin-top:30px; */
+/* position: absolute; */
+/* top: 0;
+  left: 0; */
+/* width: 100%; */
+/* height: 100%; */
+
+/* } */
+
+/* .wrapper {
+  padding: 0;
+  margin-left: 35%;
+  width: 365px;
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.5px);
+} */
+
+.common-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  background-image: url("../src/components/background_image.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 365px;
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.5px);
+
+
+}
+
+.wrapper .title {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+  /* color: #ffffff; */
+
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.wrapper form {
+  padding: 20px 30px 50px 30px;
+}
+
+.wrapper form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightseagreen;
+  /* border-radius: 25px; */
+  transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+  border-color: #4158d0;
+}
+
+.wrapper form .field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+form .field input:focus~label,
+form .field input:valid~label {
+  top: 0%;
+  font-size: 16px;
+  color: #4158d0;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+form .content {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+form .content .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+
+}
+
+form .content input {
+  width: 15px;
+  height: 15px;
+  background: red;
+}
+
+form .content label {
+  color: #262626;
+  user-select: none;
+  padding-left: 5px;
+}
+
+form .content .pass-link {
+  color: "";
+}
+
+form .field input[type="submit"] {
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: red;
+  transition: all 0.3s ease;
+}
+
+form .field input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+form .signup-link {
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+  background-color: bisque;
+}
+
+form .pass-link a,
+form .signup-link a {
+  color: #4158d0;
+  text-decoration: none;
+}
+
+form .pass-link a:hover,
+form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+form .content-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+form .content-span {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+  cursor: pointer;
+
+
+}
+
+/* form .content .fab {
+  color: #fff;
+  transition: color 0.3s ease;
+} */
