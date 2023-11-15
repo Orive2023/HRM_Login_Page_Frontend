@@ -26,17 +26,15 @@ const LoginPage = () => {
 
 
       if (role === 'admin') {
-        navigate('/employee-data');
+        navigate('/Manager');
       } else if (role === 'user') {
-        navigate('/user-page');
+        navigate('/Employee');
       } else {
 
         console.error('Unknown user role');
       }
     } catch (error) {
       console.error('Login failed', error);
-
-
       setError('Invalid username or password. Please try again.');
     }
   };
@@ -58,11 +56,12 @@ const LoginPage = () => {
           <form action="#" class="form">
             <div class="field">
               <input type="text" required onChange={(e) => setName(e.target.value)} />
-              <label for="username"><i className="fas fa-user"></i>UserName</label>
+              <label for="username">UserName<i className="fas fa-user" style={{ marginLeft: '150px' }}
+              ></i></label>
             </div>
             <div class="field">
               <input type="password" required onChange={(e) => setPassword(e.target.value)} />
-              <label for="password"><i className="fas fa-lock"></i>Password</label>
+              <label for="password"> Password<i className="fas fa-lock" style={{ marginLeft: '160px' }}></i></label>
             </div>
             <div class="content">
               <div class="checkbox">
@@ -77,7 +76,7 @@ const LoginPage = () => {
               <input type="submit" value="Login" onClick={onClickButton} />
             </div>
             <div class="signup-link">
-              Not a member? <a href="#">Signup now</a>
+              Not a member? <a href="#" style={{ marginLeft: '15px' }}>Signup now</a>
             </div>
 
             <div className="content-icon">
@@ -95,10 +94,7 @@ const LoginPage = () => {
 
 
     </div>
-
-
-
-  );
+);
 
 };
 
