@@ -80,9 +80,9 @@ const LoginPage = () => {
             </div>
 
             <div className="content-icon">
-              <span className='content-span'><i className="fab fa-facebook-f"></i></span>
-              <span className='content-span'><i className="fab fa-twitter"></i></span>
-              <span className='content-span'><i className="fab fa-instagram"></i></span>
+              <span className='content-span'><i className="fab fa-facebook-f" style={{ width: '100%', height: '100%', color: 'blue' }}></i></span>
+              <span className='content-span'><i className="fab fa-twitter" style={{ width: '100%', height: '100%', color: '#00acee' }}></i></span>
+              <span className='content-span'><i className="fab fa-instagram" style={{ width: '100%', height: '100%', color: '#FD1D1D' }}></i></span>
             </div>
           </form>
 
