@@ -4,9 +4,10 @@
   height: 100vh;
   position: relative;
   background-image: url("../src/components/background_image.jpg");
+  background-color: lightgray;
   background-size: cover;
   background-position: center;
-  opacity: 0.9;
+  opacity: 2;
 }
 
 .background-image {
@@ -24,7 +25,9 @@
   border: 3px solid white;
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(59, 56, 56, 0.26);
+  box-shadow: 0px 4px 70px 12px rgba(80, 63, 63, 0.78);
+
   backdrop-filter: blur(0.5px);
 
 
@@ -35,6 +38,7 @@
   font-weight: 700;
   text-align: center;
   line-height: 100px;
+  color: white;
   /* color: #ffffff; */
 
   user-select: none;
@@ -84,6 +88,7 @@ form .field input:valid {
   pointer-events: none;
   transform: translateY(-50%);
   transition: all 0.3s ease;
+  /* padding-left: 20px; */
 }
 
 form .field input:focus~label,
@@ -120,10 +125,13 @@ form .content input {
 }
 
 form .content label {
-  color: #262626;
+  color: white;
   user-select: none;
-  padding-left: 5px;
+
+
+
 }
+
 
 form .content .pass-link {
   color: "";
@@ -146,16 +154,22 @@ form .field input[type="submit"]:active {
 }
 
 form .signup-link {
-  color: #262626;
+  color: whitesmoke;
   margin-top: 20px;
   text-align: center;
-  background-color: bisque;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33.88px;
+
+  /* background-color: bisque; */
 }
 
 form .pass-link a,
 form .signup-link a {
-  color: #4158d0;
+  color: #d1d3dd;
+  font-weight: 700;
   text-decoration: none;
+
 }
 
 form .pass-link a:hover,
@@ -167,6 +181,7 @@ form .content-icon {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  padding-left: 20px;
 
 }
 
@@ -175,11 +190,4 @@ form .content-span {
   margin: 0 10px;
   color: #fff;
   cursor: pointer;
-
-
 }
-
-/* form .content .fab {
-  color: #fff;
-  transition: color 0.3s ease;
-} */
