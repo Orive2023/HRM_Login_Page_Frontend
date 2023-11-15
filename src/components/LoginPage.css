@@ -1,0 +1,68 @@
+.login-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../Assets/background_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.login{
+    width: 20rem;
+}
+.login-card{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 12px 3px 60px rgb(46, 46, 46);
+}
+.form-potion{
+    margin: auto;
+}
+.form-box{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.179);
+    backdrop-filter: blur(1px);
+    border: 2px solid black;
+    border-radius: 0;
+
+}
+i{
+    position: absolute;
+    z-index: 100;
+    margin-top: 10px;
+    margin-left: 72%;
+}
+.check-box{
+    background-color: rgba(255, 255, 255, 0.179);
+    backdrop-filter: blur(1px);
+    border: 2px solid black;
+    border-radius: 0px;
+}
+.submit-btn{
+    width: 100%;
+    background-color: rgb(239, 71, 71);
+    border-radius: 4px;
+}
+.below-form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.box{
+    width: 90%;
+    margin: auto;
+}
+.social-logo{
+    height: 27px;
+    width: 27px;
+}

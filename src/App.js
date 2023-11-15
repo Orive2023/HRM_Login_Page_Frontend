@@ -10,7 +10,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<LoginPage />} />
-
         <Route path='/' element={<Dashboard />} />
         <Route path='/' element={<Employee />} />
         <Route path='/' element={<Manager />} />
