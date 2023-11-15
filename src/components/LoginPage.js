@@ -73,7 +73,9 @@ const LoginPage = () => {
               </div>
             </div>
             <div class="field">
-              <input type="submit" value="Login" onClick={onClickButton} />
+              <Link to="/dashboard">
+                <input type="submit" value="Login" />
+              </Link>
             </div>
             <div class="signup-link">
               Not a member? <a href="#" style={{ marginLeft: '15px' }}>Signup now</a>
